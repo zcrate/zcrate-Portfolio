@@ -140,7 +140,7 @@ nav ul li:hover a {
 }
 #about-bio p {
   font-size: 22px;
-  line-height: 40px;
+  line-height: 50px;
   padding-left: 50px;
   padding-right: 50px;
   z-index: 2;
@@ -154,11 +154,10 @@ nav ul li:hover a {
 }
 
 #about-photo img {
-  height: 500px;
-  width: 500px;
-  margin: 45px;
-  border: 5px solid #262626;
-  border-radius: 2%;
+  height: 540px;
+  width: 540px;
+  margin: 0;
+  border: 30px solid #262626;
 }
 
 /***** WORK *****/
