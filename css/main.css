@@ -10,10 +10,10 @@ html {
 }
 
 header {
-  height: 417px;
+  height: 598px;
 }
 
-#about, #work, #contact {
+#contact {
   height: 600px;
 }
 
@@ -41,19 +41,19 @@ header img {
 }
 
 #title {
-  height: 417px;
+  height: 598px;
   width: 598px;
   clear: right;
   border-right: 2px solid #ffffff;
   border-right: 2px solid transparent;
-  border-image: linear-gradient(#ffffff, #ffffff, #00ff00);
+  border-image: linear-gradient(#ffffff, #ffffff, #00ff00, #00ff00);
   border-image-slice: 1;
 }
 #title h2 {
-  font-size: 47px;
-  height: 55px;
+  font-size: 60px;
+  line-height: 85px;
   letter-spacing: 30px;
-  padding: 0 0 0 70px;
+  padding: 0 0 0 40px;
   transition: 1s;
 }
 #title h2:hover {
@@ -112,38 +112,40 @@ nav ul li a {
 }
 nav ul li:hover a {
   text-shadow: 0 0 5px #000000;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   transition: 1s ease;
 }
 
 /***** ABOUT *****/
 
-#about .full-width {
+#about {
+  height: 600px;
+  margin: 0;
   padding: 0;
   clear: both;
 }
 
 #about .half-width {
-  height: 600px;
+  height: 540px;
+  margin: 30px 0;
+}
+
+#about-bio {
+  padding: 30px 0;
 }
 
 #about-bio h2 {
   font-size: 36px;
   font-weight: 300;
   background: #ffffff;
-  border-bottom: 8px solid transparent;
-  border-image: linear-gradient(to right, #ffffff, #ffffff, #000000, #000000, #ffffff, #ffffff);
-  border-image-slice: 1;
   padding-left: 50px;
-  margin: 45px 0 0 0;
-  z-index: 3;
+  margin: 0;
 }
 #about-bio p {
   font-size: 22px;
   line-height: 50px;
   padding-left: 50px;
   padding-right: 50px;
-  z-index: 2;
 }
 #about-bio p span {
   font-weight: 500;
@@ -151,11 +153,13 @@ nav ul li:hover a {
 
 #about-photo {
   clear: right;
+  width: 540px;
+  padding: 0 30px;
 }
 
 #about-photo img {
-  height: 540px;
-  width: 540px;
+  height: 480px;
+  width: 480px;
   margin: 0;
   border: 30px solid #262626;
 }
@@ -163,80 +167,111 @@ nav ul li:hover a {
 /***** WORK *****/
 
 #work {
-  background: #bfbfbf;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  background-image: url("../img/blackboard.jpg");
+  background-size: cover;
+  repeat:no-repeat;
+  color: #cccccc;
+}
+
+#work .third-width {
+  height: 540px;
+  margin: 30px 0;
   text-align: center;
-  clear: both
 }
-#work .full-width {
-  padding: 115px 0;
-}
+
 #work img {
-  padding-bottom: 30px;
+  width: 85px;
+}
+
+#bulb-lit {
+  display: none;
+}
+#work .third-width:hover #bulb {
+  display:none;
+}
+#work .third-width:hover #bulb-lit {
+  display: inline;
 }
 
 #work h3 {
-  font-size: 24px;
-  line-height: 32px;
-  width: 190px;
   margin: 0 auto;
+  line-height: 50px;
+  width: 250px;
+  font-size: 35px;
+  font-family: Gelasio;
+  text-shadow: 2px 2px 2px #000000;
 }
 #work p {
-  font-family: Lora;
-  font-size: 18px;
-  line-height: 30px;
   padding: 0 50px;
+  line-height: 40px;
+  font-size: 20px;
 }
 
 /***** CONTACT *****/
 
 #contact {
-  background: #ebebeb;
-}
-#contact .full-width {
-  padding: 110px 0;
+  height: 700px;
+  margin: 0;
   clear: both;
 }
-#contact #contact-img {
-  margin-left: 25px;
-  border: 12px solid #ffffff;
-}
-#contact h2, #contact #header-email, #contact #header-social, #contact ul {
-  padding-left: 115px;
-}
-#contact #envelope {
-  padding: 0 10px 0 115px;
+
+#contact .half-width {
+  height: 540px;
+  margin: 30px 0;
 }
 
-#contact h2 {
-  font-family: Lora;
+#contact-photo {
+  width: 540px;
+  padding: 0 30px;
+}
+#contact-photo img {
+  height: 480px;
+  width: 480px;
+  margin: 0;
+  border: 30px solid #262626;
+}
+
+#contact-info {
+  padding: 0 30px;
+  width: 540px;
+}
+
+#contact-info h2 {
   font-size: 36px;
-  line-height: 44px;
+  font-weight: 300;
+  background: #ffffff;
+  text-align: center;
 }
-#contact #header-email {
-  font-size: 32px;
-  line-height:44px;
-  font-weight: 400;
-  margin: -30px 0 5px 0;
+
+#contact-info h3 {
+  padding: 0 0 0 50px;
+  font-size: 34px;
+  font-family: Gelasio;
+  vertical-align: middle;
 }
-#contact a {
+
+#contact-info #email {
+  padding: 0 0 0 50px;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 28px;
-}
-#contact #header-social {
-  font-weight: bold;
-  font-size:29px;
-  line-height:44px;
-  margin: 40px 0 0 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 50px;
 }
 
 #contact ul {
   list-style: none;
+  margin: 0;
+  padding: 0 50px;
 }
 #contact ul li {
   display: inline-block;
+  padding: 0 70px 0 0;
 }
-#contact ul img {
-  font-size: 32px;
-  padding-right: 48px;
+#contact-info img {
+  width: 50px;
 }
