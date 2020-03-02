@@ -154,7 +154,7 @@ nav ul li:hover a {
 #about-photo {
   clear: right;
   width: 540px;
-  padding: 0 30px;
+  padding: 0 0 0 60px;
 }
 
 #about-photo img {
@@ -226,7 +226,7 @@ nav ul li:hover a {
 
 #contact-photo {
   width: 540px;
-  padding: 0 30px;
+  padding: 0 60px 0 0;
 }
 #contact-photo img {
   height: 480px;
