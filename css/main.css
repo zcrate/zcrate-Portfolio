@@ -191,7 +191,7 @@ nav ul li:hover a {
   display: none;
 }
 #work .third-width:hover #bulb {
-  display:none;
+  display: none;
 }
 #work .third-width:hover #bulb-lit {
   display: inline;
