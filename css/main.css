@@ -9,14 +9,6 @@ html {
   margin: 0 auto;
 }
 
-header {
-  height: 598px;
-}
-
-#contact {
-  height: 600px;
-}
-
 /***** GRID *****/
 
 .full-width {
@@ -35,6 +27,9 @@ header {
 }
 
 /***** HEADER *****/
+header {
+  height: 598px;
+}
 
 header img {
   transform: scaleX(-1)
@@ -126,12 +121,12 @@ nav ul li:hover a {
 }
 
 #about .half-width {
-  height: 540px;
   margin: 30px 0;
 }
 
 #about-bio {
   padding: 30px 0;
+  height: 480px;
 }
 
 #about-bio h2 {
@@ -154,6 +149,7 @@ nav ul li:hover a {
 #about-photo {
   clear: right;
   width: 540px;
+  height: 540px;
   padding: 0 0 0 60px;
 }
 
@@ -203,8 +199,13 @@ nav ul li:hover a {
   width: 250px;
   font-size: 35px;
   font-family: Gelasio;
+  letter-spacing: 2px;
+}
+#work .third-width:hover h3 {
+  color: #e6e6e6;
   text-shadow: 2px 2px 2px #000000;
 }
+
 #work p {
   padding: 0 50px;
   line-height: 40px;
@@ -244,18 +245,17 @@ nav ul li:hover a {
   font-size: 36px;
   font-weight: 300;
   background: #ffffff;
-  text-align: center;
 }
 
 #contact-info h3 {
-  padding: 0 0 0 50px;
+  padding: 0 0 0 20px;
   font-size: 34px;
   font-family: Gelasio;
   vertical-align: middle;
 }
 
 #contact-info #email {
-  padding: 0 0 0 50px;
+  padding: 0 0 0 40px;
   text-decoration: none;
   color: inherit;
   font-family: inherit;
@@ -266,12 +266,12 @@ nav ul li:hover a {
 #contact ul {
   list-style: none;
   margin: 0;
-  padding: 0 50px;
+  padding: 0 40px;
 }
 #contact ul li {
   display: inline-block;
-  padding: 0 70px 0 0;
+  padding: 0 80px 0 0;
 }
-#contact-info img {
+#contact-info .icon {
   width: 50px;
 }
